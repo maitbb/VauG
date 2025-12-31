@@ -1,13 +1,13 @@
 /* Reset */
 
 
-/* Default: mobile first (phones & tablets) */
+/* Default: mobile first (phones & tablets) 
 .wrapper {
     width: 100%;
-    padding: 0 16px;     /* breathing room on small screens */
-}
+    padding: 0 16px;     /* breathing room on small screens 
+}*
 
-/* Desktop and large screens */
+/* Desktop and large screens 
 @media (min-width: 1024px) {
     .wrapper {
         width: 65vw;
@@ -15,7 +15,8 @@
         margin: 0 auto;
         padding: 0;
     }
-}
+}*/
+
 
 
 
@@ -42,7 +43,7 @@ html {
 body {
     font-size: 1rem;
     line-height: 1.6;
-    color: #111;
+    color: #252553;
 }
 
 /* Fixed header */
@@ -50,7 +51,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
+    /*width: 100%; */
+    width: 600px; 
     height: 15vh;               /* 15% of viewport height */
     background-color: #10172b;
     color: #ffffff;
@@ -98,6 +100,7 @@ nav a:hover {
 main {
     margin-top: 15vh;           /* pushes content below fixed header */
     min-height: 85vh;
+    width: 600px; 
     padding: 40px;
     background-color: #b2cde3;
 }
