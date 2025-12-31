@@ -1,4 +1,26 @@
 /* Reset */
+
+
+/* Default: mobile first (phones & tablets) */
+.wrapper {
+    width: 100%;
+    padding: 0 16px;     /* breathing room on small screens */
+}
+
+/* Desktop and large screens */
+@media (min-width: 1024px) {
+    .wrapper {
+        width: 65vw;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+
+
+
+
 * {
     margin: 0;
     padding: 0;
