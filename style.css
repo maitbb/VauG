@@ -51,8 +51,8 @@ header {
     position: fixed;
     top: 0;
     left: 0;
-    /*width: 100%; */
-    width: 1200px; 
+    width: 100%; 
+    /*width: 1200px; */
     height: 15vh;               /* 15% of viewport height */
     background-color: #10172b;
     color: #ffffff;
@@ -100,7 +100,7 @@ nav a:hover {
 main {
     margin-top: 15vh;           /* pushes content below fixed header */
     min-height: 85vh;
-    width: 1200px; 
+    width: 100%; 
     padding: 40px;
     background-color: #b2cde3;
 }
