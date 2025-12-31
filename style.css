@@ -44,6 +44,10 @@ body {
     font-size: 1rem;
     line-height: 1.6;
     color: #252553;
+    a {
+        text-decoration: none;
+        color: #252553;
+    }
 }
 
 /* Fixed header */
@@ -103,6 +107,11 @@ main {
     width: 100%; 
     padding: 40px;
     background-color: #b2cde3;
+    a {
+        text-decoration: none;
+    }
+    a:hover {
+        color: rgb(7, 54, 243);}
 }
 
 /* Typography scale (uses rem units) */
