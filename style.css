@@ -28,6 +28,23 @@
     box-sizing: border-box;
 }
 
+
+.wrapper {
+    width: 100%;
+    padding: 0 16px;     /* breathing room on small screens */
+}
+
+Desktop and large screens 
+@media (min-width: 1024px) {
+    .wrapper {
+        width: 65vw;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0;
+    }
+}
+
+
 html, body {
     height: 100%;
     /*font-family: Arial, Helvetica, sans-serif; */
