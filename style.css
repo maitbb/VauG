@@ -13,7 +13,7 @@ html, body {
 
 /* FIXED: clamp(min, preferred, max) must have min < max */
 html {
-  font-size: clamp(16px, 1.1vw, 18px);
+  font-size: clamp(16px, 1.1vw, 30px);
 }
 
 body {
