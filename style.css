@@ -37,7 +37,7 @@ html, body {
 
 /* Base font-size using rems for accessibility */
 html {
-    font-size: clamp(22px, 1.1vw, 20px);
+    font-size: clamp(26px, 1.1vw, 20px);
     /*font-size: 16px;  1rem = 16px */
 }
 
