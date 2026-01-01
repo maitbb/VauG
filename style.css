@@ -7,8 +7,14 @@
 
 html, body {
   height: 100%;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont,
-               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  
+  
+  /*font-family: system-ui, -apple-system, BlinkMacSystemFont,
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;*/
+
+    font-family: "Inter", system-ui, -apple-system, sans-serif;      
+    
+    
 }
 
 /* FIXED: clamp(min, preferred, max) must have min < max 
@@ -138,3 +144,61 @@ h4 { font-size: 1.12rem; margin: 0 0 0.4rem; }
 
 
 p  { font-size: 1rem; margin: 0 0 0.25rem; }
+
+
+.item {
+  display: flex;
+  gap: 24px;
+  align-items: flex-start;
+}
+
+/* image behaves nicely */
+.item-image {
+  flex-shrink: 0;
+}
+
+.item-image img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* text/table column */
+.item-text {
+  flex: 1;
+}
+
+/* Mobile: stack vertically */
+@media (max-width: 768px) {
+  .item {
+    flex-direction: column;
+  }
+}
+
+/* table */
+.specs{
+  width:100%;
+  border-collapse:collapse;
+  font-size: 1rem;
+}
+
+.specs th,
+.specs td{
+  padding:10px 12px;
+  border-bottom:1px solid rgba(0,0,0,0.15);
+  vertical-align:top;
+}
+
+.specs th{
+  text-align:left;
+  width: 40%;
+  font-weight:600;
+  white-space:nowrap;
+}
+
+/* Mobile: stack */
+@media (max-width: 768px){
+  .item{ flex-direction:column; }
+  .item-image{ flex-basis:auto; }
+  .specs th{ white-space:normal; }
+}
