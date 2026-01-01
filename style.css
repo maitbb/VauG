@@ -22,7 +22,7 @@
 
 
 
-* {
+body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -37,7 +37,7 @@
 /* Desktop and up */
 @media (min-width: 1024px) {
     .wrapper {
-        width: 65vw;
+        width: 70vw;
         max-width: 1200px;
         margin: 0 auto;
         padding: 0;
