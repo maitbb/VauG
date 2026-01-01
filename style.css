@@ -13,7 +13,7 @@ html, body {
 
 /* FIXED: clamp(min, preferred, max) must have min < max */
 html {
-  font-size: clamp(16px, 1.1vw, 30px);
+  font-size: clamp(16px, 1.1vw, 35px);
 }
 
 body {
@@ -40,7 +40,7 @@ a {
 
 @media (min-width: 1024px) {
   .wrapper {
-    width: 70vw;       /* change to 65vw if you prefer */
+    width: 60vw;       /* change to 65vw if you prefer */
     max-width: 1200px;
     margin: 0 auto;
     padding: 0;        /* or keep 0 24px if you want */
