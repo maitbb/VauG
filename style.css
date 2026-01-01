@@ -10,9 +10,10 @@ html, body {
   
   
   /*font-family: system-ui, -apple-system, BlinkMacSystemFont,
-               "Segoe UI", Roboto, Helvetica, Arial, sans-serif;*/
+               "Segoe UI", Roboto, Helvetica, Arial, sans-serif; */
 
-    font-family: "Inter", system-ui, -apple-system, sans-serif;      
+    font-family: "Inter", system-ui, -apple-system, sans-serif;   
+     
     
     
 }
@@ -196,9 +197,36 @@ p  { font-size: 1rem; margin: 0 0 0.25rem; }
   white-space:nowrap;
 }
 
+
+/* Gallery business */
 /* Mobile: stack */
 @media (max-width: 768px){
   .item{ flex-direction:column; }
   .item-image{ flex-basis:auto; }
   .specs th{ white-space:normal; }
+}
+
+/* Mobile/tablet: stacked */
+.gallery a {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.gallery img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Desktop: turn into a grid gallery */
+@media (min-width: 1024px) {
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns on desktop */
+    gap: 16px;
+  }
+
+  .gallery a {
+    margin-bottom: 0; /* remove stacking spacing */
+  }
 }
