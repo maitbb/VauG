@@ -34,7 +34,7 @@
     padding: 0 16px;     /* breathing room on small screens */
 }
 
-Desktop and large screens 
+/* Desktop and up */
 @media (min-width: 1024px) {
     .wrapper {
         width: 65vw;
